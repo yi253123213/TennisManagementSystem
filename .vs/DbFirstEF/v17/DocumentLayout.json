@@ -1,49 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\339 final\\TennisManagementSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\mhmda\\source\\hiit339Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\339 final\\tennismanagementsystem\\dbfirstef\\views\\schedules\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\views\\schedules\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\339 final\\tennismanagementsystem\\dbfirstef\\models\\coach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\models\\coach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\339 final\\tennismanagementsystem\\dbfirstef\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\339 final\\tennismanagementsystem\\dbfirstef\\controllers\\schedulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\controllers\\schedulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\339 final\\tennismanagementsystem\\dbfirstef\\migrations\\20241011060122_addcoachidtoschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\migrations\\20241011060122_addcoachidtoschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\339 final\\tennismanagementsystem\\dbfirstef\\data\\hitdb1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\data\\hitdb1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\339 final\\tennismanagementsystem\\dbfirstef\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\339 final\\tennismanagementsystem\\dbfirstef\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\339 final\\tennismanagementsystem\\dbfirstef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\339 final\\tennismanagementsystem\\dbfirstef\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\users\\mhmda\\source\\hiit339final\\dbfirstef\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\339 final\\tennismanagementsystem\\dbfirstef\\controllers\\coachescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\users\\mhmda\\source\\hiit339final\\dbfirstef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\users\\mhmda\\source\\hiit339final\\dbfirstef\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\users\\mhmda\\source\\hiit339final\\dbfirstef\\models\\coach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\models\\coach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\users\\mhmda\\source\\hiit339final\\dbfirstef\\views\\schedules\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\views\\schedules\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\users\\mhmda\\source\\hiit339final\\dbfirstef\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\users\\mhmda\\source\\hiit339final\\dbfirstef\\controllers\\schedulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\controllers\\schedulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\users\\mhmda\\source\\hiit339final\\dbfirstef\\migrations\\20241011060122_addcoachidtoschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\migrations\\20241011060122_addcoachidtoschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\users\\mhmda\\source\\hiit339final\\dbfirstef\\data\\hitdb1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\data\\hitdb1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\users\\mhmda\\source\\hiit339final\\dbfirstef\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|c:\\users\\mhmda\\source\\hiit339final\\dbfirstef\\controllers\\coachescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC9EDF36-FA46-4A0D-887A-BE261482E5C9}|DbFirstEF\\DbFirstEF.csproj|solutionrelative:dbfirstef\\controllers\\coachescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,27 +54,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Coach.cs",
-              "DocumentMoniker": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Models\\Coach.cs",
+              "DocumentMoniker": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Models\\Coach.cs",
               "RelativeDocumentMoniker": "DbFirstEF\\Models\\Coach.cs",
-              "ToolTip": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Models\\Coach.cs",
+              "ToolTip": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Models\\Coach.cs",
               "RelativeToolTip": "DbFirstEF\\Models\\Coach.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T06:26:16.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "20241011060122_AddCoachIdToSchedule.cs",
-              "DocumentMoniker": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Migrations\\20241011060122_AddCoachIdToSchedule.cs",
+              "DocumentMoniker": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Migrations\\20241011060122_AddCoachIdToSchedule.cs",
               "RelativeDocumentMoniker": "DbFirstEF\\Migrations\\20241011060122_AddCoachIdToSchedule.cs",
-              "ToolTip": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Migrations\\20241011060122_AddCoachIdToSchedule.cs",
+              "ToolTip": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Migrations\\20241011060122_AddCoachIdToSchedule.cs",
               "RelativeToolTip": "DbFirstEF\\Migrations\\20241011060122_AddCoachIdToSchedule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -82,24 +86,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Views\\Schedules\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Views\\Schedules\\Index.cshtml",
               "RelativeDocumentMoniker": "DbFirstEF\\Views\\Schedules\\Index.cshtml",
-              "ToolTip": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Views\\Schedules\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Views\\Schedules\\Index.cshtml",
               "RelativeToolTip": "DbFirstEF\\Views\\Schedules\\Index.cshtml",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAmwC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-11T05:54:35.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T05:54:35.007Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "SchedulesController.cs",
-              "DocumentMoniker": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Controllers\\SchedulesController.cs",
+              "DocumentMoniker": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Controllers\\SchedulesController.cs",
               "RelativeDocumentMoniker": "DbFirstEF\\Controllers\\SchedulesController.cs",
-              "ToolTip": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Controllers\\SchedulesController.cs",
+              "ToolTip": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Controllers\\SchedulesController.cs",
               "RelativeToolTip": "DbFirstEF\\Controllers\\SchedulesController.cs",
               "ViewState": "AgIAAIwAAAAAAAAAAAAIwJ8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -107,11 +110,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Schedule.cs",
-              "DocumentMoniker": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Models\\Schedule.cs",
+              "DocumentMoniker": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Models\\Schedule.cs",
               "RelativeDocumentMoniker": "DbFirstEF\\Models\\Schedule.cs",
-              "ToolTip": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Models\\Schedule.cs",
+              "ToolTip": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Models\\Schedule.cs",
               "RelativeToolTip": "DbFirstEF\\Models\\Schedule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -119,11 +122,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Hitdb1Context.cs",
-              "DocumentMoniker": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Data\\Hitdb1Context.cs",
+              "DocumentMoniker": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Data\\Hitdb1Context.cs",
               "RelativeDocumentMoniker": "DbFirstEF\\Data\\Hitdb1Context.cs",
-              "ToolTip": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Data\\Hitdb1Context.cs",
+              "ToolTip": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Data\\Hitdb1Context.cs",
               "RelativeToolTip": "DbFirstEF\\Data\\Hitdb1Context.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAuwEIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -131,11 +134,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "MembersController.cs",
-              "DocumentMoniker": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Controllers\\MembersController.cs",
+              "DocumentMoniker": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Controllers\\MembersController.cs",
               "RelativeDocumentMoniker": "DbFirstEF\\Controllers\\MembersController.cs",
-              "ToolTip": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Controllers\\MembersController.cs",
+              "ToolTip": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Controllers\\MembersController.cs",
               "RelativeToolTip": "DbFirstEF\\Controllers\\MembersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -143,11 +146,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\appsettings.json",
               "RelativeDocumentMoniker": "DbFirstEF\\appsettings.json",
-              "ToolTip": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\appsettings.json",
+              "ToolTip": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\appsettings.json",
               "RelativeToolTip": "DbFirstEF\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -155,25 +158,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "DbFirstEF\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "DbFirstEF\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-11T04:42:29.005Z"
+              "WhenOpened": "2024-10-11T04:42:29.005Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Program.cs",
               "RelativeDocumentMoniker": "DbFirstEF\\Program.cs",
-              "ToolTip": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Program.cs",
+              "ToolTip": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Program.cs",
               "RelativeToolTip": "DbFirstEF\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T04:38:47.804Z"
             },
@@ -181,9 +185,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "CoachesController.cs",
-              "DocumentMoniker": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Controllers\\CoachesController.cs",
+              "DocumentMoniker": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Controllers\\CoachesController.cs",
               "RelativeDocumentMoniker": "DbFirstEF\\Controllers\\CoachesController.cs",
-              "ToolTip": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\Controllers\\CoachesController.cs",
+              "ToolTip": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\Controllers\\CoachesController.cs",
               "RelativeToolTip": "DbFirstEF\\Controllers\\CoachesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

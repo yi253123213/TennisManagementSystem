@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\DbFirstEF.csproj": {}
+    "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\DbFirstEF.csproj": {}
   },
   "projects": {
-    "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\DbFirstEF.csproj": {
+    "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\DbFirstEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\DbFirstEF.csproj",
+        "projectUniqueName": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\DbFirstEF.csproj",
         "projectName": "DbFirstEF",
-        "projectPath": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\DbFirstEF.csproj",
+        "projectPath": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\DbFirstEF.csproj",
         "packagesPath": "C:\\Users\\mhmda\\.nuget\\packages\\",
-        "outputPath": "C:\\339 final\\TennisManagementSystem\\DbFirstEF\\obj\\",
+        "outputPath": "C:\\Users\\mhmda\\source\\hiit339Final\\DbFirstEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mhmda\\AppData\\Roaming\\NuGet\\NuGet.Config",
