@@ -12,6 +12,8 @@ namespace _339ass3.Data
         }
 
         public DbSet<Member> Members { get; set; }
+        public DbSet<Coach> Coaches { get; set; }
+        public DbSet<Schedule> Schedules { get; set; }
 
     }
 }
