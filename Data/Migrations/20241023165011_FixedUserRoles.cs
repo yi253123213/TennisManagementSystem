@@ -5,7 +5,7 @@
 namespace TennisFinalGrp339.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class incCr : Migration
+    public partial class FixedUserRoles : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

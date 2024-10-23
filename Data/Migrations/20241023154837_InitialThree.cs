@@ -5,7 +5,7 @@
 namespace TennisFinalGrp339.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class NewCreate : Migration
+    public partial class InitialThree : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

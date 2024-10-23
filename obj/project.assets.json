@@ -8162,19 +8162,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\damon\\.nuget\\packages\\": {}
+    "C:\\Users\\mhmda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\damon\\Source\\Repos\\TennisManagementSystem\\TennisFinalGrp339.csproj",
+      "projectUniqueName": "C:\\Users\\mhmda\\source\\repos\\TMS339\\TennisFinalGrp339.csproj",
       "projectName": "TennisFinalGrp339",
-      "projectPath": "C:\\Users\\damon\\Source\\Repos\\TennisManagementSystem\\TennisFinalGrp339.csproj",
-      "packagesPath": "C:\\Users\\damon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\damon\\Source\\Repos\\TennisManagementSystem\\obj\\",
+      "projectPath": "C:\\Users\\mhmda\\source\\repos\\TMS339\\TennisFinalGrp339.csproj",
+      "packagesPath": "C:\\Users\\mhmda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mhmda\\source\\repos\\TMS339\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\damon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mhmda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

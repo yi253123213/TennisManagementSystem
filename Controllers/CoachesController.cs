@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,12 +21,14 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches
+        [Authorize(Roles = "Member, Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Coach.ToListAsync());
         }
 
         // GET: Coaches/Details/5
+        [Authorize(Roles = "Member, Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,6 +47,7 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -65,7 +69,9 @@ namespace TennisFinalGrp339.Controllers
             return View(coach);
         }
 
+
         // GET: Coaches/Edit/5
+        [Authorize(Roles = "Coach, Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -117,6 +123,7 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches/Delete/5
+        [Authorize(Roles = "Coach, Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
