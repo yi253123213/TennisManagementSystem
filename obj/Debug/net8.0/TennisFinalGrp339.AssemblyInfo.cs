@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TennisFinalGrp339")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f24947561557a4685342c110b47213a3db340db")]
 [assembly: System.Reflection.AssemblyProductAttribute("TennisFinalGrp339")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TennisFinalGrp339")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

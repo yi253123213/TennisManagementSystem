@@ -14,7 +14,7 @@ namespace TennisFinalGrp339.Data
         public DbSet<TennisFinalGrp339.Models.Member> Member { get; set; } = default!;
         public DbSet<TennisFinalGrp339.Models.Schedule> Schedule { get; set; } = default!;
 
-
+        //yhyh
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
