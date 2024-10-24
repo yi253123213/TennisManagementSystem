@@ -46,7 +46,7 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches/Create
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -55,7 +55,7 @@ namespace TennisFinalGrp339.Controllers
         // POST: Coaches/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("CoachId,FirstName,LastName,Biography,Photo")] Coach coach)
         {
             if (ModelState.IsValid)
