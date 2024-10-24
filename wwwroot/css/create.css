@@ -1,0 +1,112 @@
+﻿/* Edit Page Container Styling */
+.row {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Form Container */
+.col-md-4 {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Form Group Spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.control-label {
+    color: #006400;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input Fields */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #32cd32;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+    .form-control:focus {
+        outline: none;
+        border-color: #228b22;
+        box-shadow: 0 0 5px rgba(50, 205, 50, 0.3);
+    }
+
+/* Validation Messages */
+.text-danger {
+    color: #ffcc00;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Submit Button Container */
+.form-group:last-child {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Back to List Link */
+a[asp-action="Index"] {
+    display: inline-block;
+    color: #32cd32;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+    a[asp-action="Index"]:hover {
+        color: #228b22;
+        text-decoration: underline;
+    }
+
+/* Page Title */
+h1 {
+    color: #006400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #006400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Horizontal Line */
+hr {
+    border-color: #32cd32;
+    margin: 20px 0;
+    opacity: 0.3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .row {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .form-control {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+}

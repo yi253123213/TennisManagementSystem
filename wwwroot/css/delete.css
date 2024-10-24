@@ -1,0 +1,152 @@
+﻿/* Page Titles */
+h1 {
+    color: #ff6347;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+h3 {
+    color: #ff6347;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+h4 {
+    color: #006400;
+    margin-bottom: 15px;
+}
+
+/* Horizontal Line */
+hr {
+    border-color: #32cd32;
+    margin: 20px 0;
+    opacity: 0.3;
+}
+
+/* Description List Styling */
+dl.row {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f5fff5;
+    border-radius: 6px;
+    border: 1px solid #32cd32;
+}
+
+dt.col-sm-2 {
+    color: #006400;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+dd.col-sm-10 {
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Alternating Row Colors */
+dl.row dt:nth-of-type(odd),
+dl.row dd:nth-of-type(odd) {
+    background-color: rgba(50, 205, 50, 0.05);
+}
+
+/* Form Styling */
+form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Delete Button */
+.btn-danger {
+    background-color: #ff6347;
+    border-color: #ff6347;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+}
+
+    .btn-danger:hover {
+        background-color: #e5533d;
+        border-color: #e5533d;
+        transform: translateY(-2px);
+    }
+
+/* Back to List Link */
+a[asp-action="Index"] {
+    display: inline-block;
+    color: #32cd32;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    vertical-align: middle;
+}
+
+    a[asp-action="Index"]:hover {
+        color: #228b22;
+        text-decoration: underline;
+    }
+
+/* Warning Icon (using pseudo-element) */
+h3::before {
+    content: "⚠️";
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    div {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    dl.row {
+        padding: 10px;
+    }
+
+    dt.col-sm-2,
+    dd.col-sm-10 {
+        padding: 8px;
+    }
+
+    .btn-danger {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    a[asp-action="Index"] {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Delete Button Container */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+}
