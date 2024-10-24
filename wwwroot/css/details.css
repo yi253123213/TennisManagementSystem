@@ -1,0 +1,60 @@
+﻿/* Details Page Styling */
+h4 {
+    color: #006400;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+hr {
+    border-top: 2px solid #32cd32;
+    margin-bottom: 20px;
+}
+
+.dl {
+    margin-top: 20px;
+}
+
+    .dl dt {
+        font-weight: bold;
+        color: #006400;
+    }
+
+    .dl dd {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+    }
+
+/* Action Links Styling */
+a[asp-action="Edit"], a[asp-action="Index"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #32cd32;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    a[asp-action="Edit"]:hover, a[asp-action="Index"]:hover {
+        background-color: #228b22;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+/* Photo Styling */
+dd img {
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #32cd32;
+    margin-top: 10px;
+}
