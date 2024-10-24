@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TennisFinalGrp339.Data;
 using TennisFinalGrp339.Models;
@@ -21,14 +20,14 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches
-        [Authorize(Roles = "Member, Admin")]
+        [Authorize(Roles = "Member, Coach, Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Coach.ToListAsync());
         }
 
         // GET: Coaches/Details/5
-        [Authorize(Roles = "Member, Admin")]
+        [Authorize(Roles = "Member, Coach, Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -54,10 +53,9 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // POST: Coaches/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("CoachId,FirstName,LastName,Biography,Photo")] Coach coach)
         {
             if (ModelState.IsValid)
@@ -68,7 +66,6 @@ namespace TennisFinalGrp339.Controllers
             }
             return View(coach);
         }
-
 
         // GET: Coaches/Edit/5
         [Authorize(Roles = "Coach, Admin")]
@@ -88,10 +85,9 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // POST: Coaches/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Coach, Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("CoachId,FirstName,LastName,Biography,Photo")] Coach coach)
         {
             if (id != coach.CoachId)
@@ -123,7 +119,7 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches/Delete/5
-        [Authorize(Roles = "Coach, Admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -144,6 +140,7 @@ namespace TennisFinalGrp339.Controllers
         // POST: Coaches/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var coach = await _context.Coach.FindAsync(id);

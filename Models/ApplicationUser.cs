@@ -5,13 +5,14 @@ namespace TennisFinalGrp339.Models
     public class ApplicationUser : IdentityUser
     {
         [PersonalData]
-        public string? FirstName { get; set; }
-        [PersonalData]
-        public string? LastName { get; set; }
+        public string FirstName { get; set; } = string.Empty;
 
-        public string? Biography { get; set; } // To store biography
         [PersonalData]
-        public bool IsCoach { get; set; } // To differentiate between Member and Coach
+        public string LastName { get; set; } = string.Empty;
 
+        public string? Biography { get; set; } 
+
+        [PersonalData]
+        public bool IsCoach { get; set; } 
     }
 }

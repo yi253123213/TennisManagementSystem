@@ -11,7 +11,6 @@ namespace TennisFinalGrp339
         {
             var builder = WebApplication.CreateBuilder(args);
 
-
             // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -23,8 +22,10 @@ namespace TennisFinalGrp339
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
 
-            var app = builder.Build();
+            // Add RoleManager to DI
+            builder.Services.AddScoped<RoleManager<IdentityRole>>();
 
+            var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -34,7 +35,6 @@ namespace TennisFinalGrp339
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -43,6 +43,7 @@ namespace TennisFinalGrp339
 
             app.UseRouting();
 
+            app.UseAuthentication(); // Ensure authentication is enabled
             app.UseAuthorization();
 
             app.MapControllerRoute(
@@ -50,10 +51,9 @@ namespace TennisFinalGrp339
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
 
-            using(var scope = app.Services.CreateScope())
+            using (var scope = app.Services.CreateScope())
             {
-                var roleManager = 
-                    scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+                var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
                 var roles = new[] { "Admin", "Member", "Coach" };
 
                 foreach (var role in roles)
@@ -61,9 +61,8 @@ namespace TennisFinalGrp339
                     if (!await roleManager.RoleExistsAsync(role))
                         await roleManager.CreateAsync(new IdentityRole(role));
                 }
-
-
             }
+
             app.Run();
         }
     }

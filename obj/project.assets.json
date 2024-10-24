@@ -8167,11 +8167,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhmda\\source\\repos\\TMS339\\TennisFinalGrp339.csproj",
+      "projectUniqueName": "C:\\Users\\mhmda\\Downloads\\TennisManagementSystem\\TennisManagementSystem\\TennisFinalGrp339.csproj",
       "projectName": "TennisFinalGrp339",
-      "projectPath": "C:\\Users\\mhmda\\source\\repos\\TMS339\\TennisFinalGrp339.csproj",
+      "projectPath": "C:\\Users\\mhmda\\Downloads\\TennisManagementSystem\\TennisManagementSystem\\TennisFinalGrp339.csproj",
       "packagesPath": "C:\\Users\\mhmda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mhmda\\source\\repos\\TMS339\\obj\\",
+      "outputPath": "C:\\Users\\mhmda\\Downloads\\TennisManagementSystem\\TennisManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mhmda\\AppData\\Roaming\\NuGet\\NuGet.Config",

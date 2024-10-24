@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h3pLWppKljM=",
+  "dgSpecHash": "vfPX2WZ/2+o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mhmda\\source\\repos\\TMS339\\TennisFinalGrp339.csproj",
+  "projectFilePath": "C:\\Users\\mhmda\\Downloads\\TennisManagementSystem\\TennisManagementSystem\\TennisFinalGrp339.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mhmda\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\mhmda\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

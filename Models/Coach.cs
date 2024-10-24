@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace TennisFinalGrp339.Models;
-
-public partial class Coach
+namespace TennisFinalGrp339.Models
 {
-    [Key]
-    public int CoachId { get; set; }
+    public class Coach
+    {
+        [Key]
+        public int CoachId { get; set; }
 
-    public string FirstName { get; set; } = null!;
+        [Required]
+        public string FirstName { get; set; } = string.Empty;
 
-    public string LastName { get; set; } = null!;
+        [Required]
+        public string LastName { get; set; } = string.Empty;
 
-    public string? Biography { get; set; }
+        public string? Biography { get; set; }
 
-    public byte[]? Photo { get; set; }
+        public byte[]? Photo { get; set; }
+    }
 }
