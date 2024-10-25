@@ -51,6 +51,12 @@
                                 <a class="nav-link" asp-controller="Schedules" asp-action="CoachSchedules">Upcoming Schedules</a>
                             </li>
                         }
+                        @if (User.IsInRole("Member"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Schedules" asp-action="MemberSchedules">My Schedules</a>
+                            </li>
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

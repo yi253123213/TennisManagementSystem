@@ -247,6 +247,24 @@ namespace TennisFinalGrp339.Controllers
             return View("CoachSchedules", schedules); // Use a new view
         }
 
+        public async Task<IActionResult> MemberSchedules()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null || user.MemberId == null)
+            {
+                return RedirectToAction("Index"); // Redirect if not a member
+            }
+
+            // Retrieve schedules with enrollments data for the logged-in member
+            var schedules = await _context.Schedule
+                .Where(s => s.Enrollments.Any(e => e.MemberId == user.MemberId))
+                .Include(s => s.Enrollments) // Include Enrollments data
+                .Include(s => s.Coach)        // Optionally include Coach if needed
+                .ToListAsync();
+
+            return View("MemberSchedules", schedules);
+        }
+
 
 
         private bool ScheduleExists(int id)

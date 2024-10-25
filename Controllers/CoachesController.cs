@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TennisFinalGrp339.Data;
@@ -13,9 +14,11 @@ namespace TennisFinalGrp339.Controllers
     public class CoachesController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public CoachesController(ApplicationDbContext context)
+        public CoachesController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
+            _userManager = userManager;
             _context = context;
         }
 
@@ -71,9 +74,12 @@ namespace TennisFinalGrp339.Controllers
         //[Authorize(Roles = "Coach, Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            var user = await _userManager.GetUserAsync(User);
+
+            // Check if the user is trying to access their own profile
+            if (user.CoachId != id)
             {
-                return NotFound();
+                return Forbid(); // Deny access if the CoachId doesn't match
             }
 
             var coach = await _context.Coach.FindAsync(id);
@@ -161,6 +167,19 @@ namespace TennisFinalGrp339.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> MyProfile()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null || user.CoachId == null)
+            {
+                return RedirectToAction("Index", "Home"); // Or another appropriate action for non-coaches
+            }
+
+            int coachId = user.CoachId.Value;
+            return RedirectToAction("Edit", new { id = coachId });
+        }
+
 
         private bool CoachExists(int id)
         {
