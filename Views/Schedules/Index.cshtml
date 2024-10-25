@@ -20,17 +20,28 @@
             <th>@Html.DisplayNameFor(model => model.Name)</th>
             <th>@Html.DisplayNameFor(model => model.Location)</th>
             <th>@Html.DisplayNameFor(model => model.Description)</th>
+            <th>Scheduled Date</th>
+            <th>Coach</th> <!-- Add this column for the coach -->
             <th>Actions</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
-            var isEnrolled = item.Enrollments.Any(e => e.MemberId == user.MemberId); // Check if user is enrolled in the schedule
+            var isEnrolled = item.Enrollments != null && user != null && item.Enrollments.Any(e => e.MemberId == user.MemberId);
+
             <tr>
                 <td>@Html.DisplayFor(modelItem => item.Name)</td>
                 <td>@Html.DisplayFor(modelItem => item.Location)</td>
                 <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                <td>@item.ScheduledDate.ToShortDateString()</td>
+                <td>
+                        <!-- Display the coach's full name as a clickable link -->
+                        <a asp-action="Details" asp-controller="Coaches" asp-route-id="@item.CoachId">
+                            @item.Coach.FirstName @item.Coach.LastName
+                        </a>
+
+                </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.ScheduleId">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.ScheduleId">Details</a> |

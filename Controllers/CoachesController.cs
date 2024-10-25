@@ -68,7 +68,7 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches/Edit/5
-        [Authorize(Roles = "Coach, Admin")]
+        //[Authorize(Roles = "Coach, Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -87,7 +87,7 @@ namespace TennisFinalGrp339.Controllers
         // POST: Coaches/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Coach, Admin")]
+        //[Authorize(Roles = "Coach, Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("CoachId,FirstName,LastName,Biography,Photo")] Coach coach)
         {
             if (id != coach.CoachId)

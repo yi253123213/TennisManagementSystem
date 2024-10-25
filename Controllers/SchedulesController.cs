@@ -26,6 +26,7 @@ namespace TennisFinalGrp339.Controllers
         public async Task<IActionResult> Index()
         {
             var schedules = await _context.Schedule
+                .Include(s => s.Coach) // Include Coach entity
                 .Include(s => s.Enrollments) // Include enrollments
                 .ToListAsync();
 
@@ -41,7 +42,8 @@ namespace TennisFinalGrp339.Controllers
             }
 
             var schedule = await _context.Schedule
-                 .Include(s => s.Enrollments) // Include enrollments for the schedule
+                .Include(s => s.Coach) // Include Coach entity
+                .Include(s => s.Enrollments) // Include enrollments for the schedule
                 .FirstOrDefaultAsync(m => m.ScheduleId == id);
             if (schedule == null)
             {
@@ -166,10 +168,15 @@ namespace TennisFinalGrp339.Controllers
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return RedirectToAction("Login", "Account"); // Redirect to login if not authenticated
+                return Redirect("/Identity/Account/Login"); // Redirect to login if not authenticated
             }
 
+            if (user.MemberId == null)
+            {
+                return BadRequest("MemberId is missing for the current user.");
+            }
             var memberId = user.MemberId.Value;
+
             // Get the schedule by ID
             var schedule = _context.Schedule.Find(id);
             if (schedule == null)
@@ -193,7 +200,12 @@ namespace TennisFinalGrp339.Controllers
         public async Task<IActionResult> Unenroll(int id)
         {
             var user = await _userManager.GetUserAsync(User);
+            if (user.MemberId == null)
+            {
+                return BadRequest("MemberId is missing for the current user.");
+            }
             var memberId = user.MemberId.Value;
+
 
             var enrollment = await _context.Enrollment
                 .FirstOrDefaultAsync(e => e.ScheduleId == id && e.MemberId == memberId);
