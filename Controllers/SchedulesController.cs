@@ -46,6 +46,7 @@ namespace TennisFinalGrp339.Controllers
         // GET: Schedules/Create
         public IActionResult Create()
         {
+            ViewBag.CoachId = new SelectList(_context.Coach, "CoachId", "FirstName"); // Assuming 'FirstName' for simplicity, you can concatenate FirstName and LastName if needed.
             return View();
         }
 
@@ -54,7 +55,7 @@ namespace TennisFinalGrp339.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ScheduleId,Name,Location,Description")] Schedule schedule)
+        public async Task<IActionResult> Create([Bind("ScheduleId,Name,Location,Description,ScheduledDate,CoachId")] Schedule schedule)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +63,9 @@ namespace TennisFinalGrp339.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            // Reload the dropdown list in case of errors
+            ViewBag.CoachId = new SelectList(_context.Coach, "CoachId", "FirstName", schedule.CoachId);
             return View(schedule);
         }
 

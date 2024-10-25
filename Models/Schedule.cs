@@ -9,7 +9,7 @@ public partial class Schedule
     [Key]
     public int ScheduleId { get; set; }
 
-    public string Name { get; set; } = null!;
+    public string? Name { get; set; } = null!;
 
     public string? Location { get; set; }
 
@@ -18,7 +18,7 @@ public partial class Schedule
 
     // Foreign Key to Coach
     public int CoachId { get; set; }
-    public Coach Coach { get; set; } = null!;
+    public Coach? Coach { get; set; } = null!;
 
     public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
 
