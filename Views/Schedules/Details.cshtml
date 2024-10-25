@@ -60,3 +60,20 @@
         <a asp-action="Enroll" asp-route-id="@Model?.ScheduleId" class="btn btn-primary">Enroll</a>
     }
 </div>
+
+<h2>Enrolled Students</h2>
+@if (Model.Enrollments.Any())
+{
+    <ul>
+        @foreach (var enrollment in Model.Enrollments)
+        {
+            <li>
+                @enrollment.Member.FirstName @enrollment.Member.LastName (@enrollment.Member.Email)
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No students are enrolled in this schedule yet.</p>
+}

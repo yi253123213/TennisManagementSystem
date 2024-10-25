@@ -44,6 +44,7 @@ namespace TennisFinalGrp339.Controllers
             var schedule = await _context.Schedule
                 .Include(s => s.Coach) // Include Coach entity
                 .Include(s => s.Enrollments) // Include enrollments for the schedule
+                    .ThenInclude(e => e.Member) // Include each member in the enrollments
                 .FirstOrDefaultAsync(m => m.ScheduleId == id);
             if (schedule == null)
             {
