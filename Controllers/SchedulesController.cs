@@ -230,6 +230,24 @@ namespace TennisFinalGrp339.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> CoachSchedules()
+        {
+            // Get the logged-in user
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null || user.CoachId == null)
+            {
+                return RedirectToAction("Index"); // Redirect if not a coach
+            }
+
+            // Get schedules for the logged-in coach
+            var schedules = await _context.Schedule
+                .Where(s => s.CoachId == user.CoachId)
+                .ToListAsync();
+
+            return View("CoachSchedules", schedules); // Use a new view
+        }
+
+
 
         private bool ScheduleExists(int id)
         {

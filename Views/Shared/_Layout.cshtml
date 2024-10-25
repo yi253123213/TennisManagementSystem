@@ -36,7 +36,6 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
 
-                        <!-- New Menu Items for Members, Coaches, Schedules -->
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Members" asp-action="Index">Members</a>
                         </li>
@@ -46,7 +45,12 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Schedules" asp-action="Index">Schedules</a>
                         </li>
-                        <!-- End of New Menu Items -->
+                        @if (User.IsInRole("Coach"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Schedules" asp-action="CoachSchedules">Upcoming Schedules</a>
+                            </li>
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
