@@ -1,267 +1,299 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TennisFinalGrp339.bundle.scp.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TennisFinalGrp339.bundle.scp.css",
       "PackagePath": "staticwebassets\\TennisFinalGrp339.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\css\\TennisFinalGrp339.styles.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\css\\TennisFinalGrp339.styles.css",
       "PackagePath": "staticwebassets\\css\\TennisFinalGrp339.styles.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\css\\create.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\css\\coach.css",
+      "PackagePath": "staticwebassets\\css\\coach.css"
+    },
+    {
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\css\\create.css",
       "PackagePath": "staticwebassets\\css\\create.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\css\\delete.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\css\\delete.css",
       "PackagePath": "staticwebassets\\css\\delete.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\css\\edit.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\css\\details.css",
+      "PackagePath": "staticwebassets\\css\\details.css"
+    },
+    {
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\css\\edit.css",
       "PackagePath": "staticwebassets\\css\\edit.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\css\\member.css",
+      "PackagePath": "staticwebassets\\css\\member.css"
+    },
+    {
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\css\\privacy.css",
+      "PackagePath": "staticwebassets\\css\\privacy.css"
+    },
+    {
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\css\\schedules.css",
+      "PackagePath": "staticwebassets\\css\\schedules.css"
+    },
+    {
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\images\\court.jpg",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\images\\court.jpg",
       "PackagePath": "staticwebassets\\images\\court.jpg"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\images\\racket.jpeg",
+      "PackagePath": "staticwebassets\\images\\racket.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\images\\tennis.jpeg",
+      "PackagePath": "staticwebassets\\images\\tennis.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\mhmda\\Documents\\339 finalll\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

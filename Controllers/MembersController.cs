@@ -140,12 +140,19 @@ namespace TennisFinalGrp339.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var member = await _context.Member.FindAsync(id);
-            if (member != null)
+            if (member == null)
             {
-                _context.Member.Remove(member);
+                return NotFound();
+            }
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.MemberId == id);
+            if (user != null)
+            {
+                _context.Users.Remove(user);
             }
 
+            _context.Member.Remove(member);
             await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 

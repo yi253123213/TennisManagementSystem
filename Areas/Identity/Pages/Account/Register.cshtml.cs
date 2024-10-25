@@ -133,6 +133,11 @@ namespace TennisFinalGrp339.Areas.Identity.Pages.Account
                         };
                         _context.Member.Add(member);
                         await _context.SaveChangesAsync();
+
+                        // Associate the newly created Member with the ApplicationUser
+                        user.MemberId = member.MemberId; // Assuming Member has an Id property
+                        _context.Users.Update(user);
+                        await _context.SaveChangesAsync();
                     }
 
                     _logger.LogInformation("User created a new account with password.");

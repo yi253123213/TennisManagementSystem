@@ -13,7 +13,7 @@ namespace TennisFinalGrp339.Data
         public DbSet<Coach> Coach { get; set; } = default!;
         public DbSet<Member> Member { get; set; } = default!;
         public DbSet<Schedule> Schedule { get; set; } = default!;
-        public DbSet<Enrollment> Enrollments { get; set; } = default!;
+        public DbSet<Enrollment> Enrollment { get; set; } = default!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -80,6 +80,19 @@ namespace TennisFinalGrp339.Data
                     .HasForeignKey(e => e.ScheduleId)
                     .OnDelete(DeleteBehavior.Cascade);
             });
+
+            modelBuilder.Entity<ApplicationUser>()
+                .HasOne(a => a.Member)
+                .WithOne()
+                .HasForeignKey<ApplicationUser>(a => a.MemberId)
+                .OnDelete(DeleteBehavior.Cascade); // Cascade delete Member when ApplicationUser is deleted
+
+            
+            modelBuilder.Entity<Member>()
+                .HasOne<ApplicationUser>()
+                .WithOne(a => a.Member)
+                .HasForeignKey<ApplicationUser>(a => a.MemberId)
+                .OnDelete(DeleteBehavior.Cascade); // Delete ApplicationUser when Member is deleted
 
             OnModelCreatingPartial(modelBuilder);
         }

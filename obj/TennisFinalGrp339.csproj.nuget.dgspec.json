@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\TennisFinalGrp339.csproj": {}
+    "C:\\Users\\mhmda\\Documents\\339 finalll\\TennisFinalGrp339.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\TennisFinalGrp339.csproj": {
+    "C:\\Users\\mhmda\\Documents\\339 finalll\\TennisFinalGrp339.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\TennisFinalGrp339.csproj",
+        "projectUniqueName": "C:\\Users\\mhmda\\Documents\\339 finalll\\TennisFinalGrp339.csproj",
         "projectName": "TennisFinalGrp339",
-        "projectPath": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\TennisFinalGrp339.csproj",
-        "packagesPath": "C:\\Users\\eahmt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eahmt\\OneDrive\\Desktop\\git\\TennisManagementSystem\\obj\\",
+        "projectPath": "C:\\Users\\mhmda\\Documents\\339 finalll\\TennisFinalGrp339.csproj",
+        "packagesPath": "C:\\Users\\mhmda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mhmda\\Documents\\339 finalll\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eahmt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mhmda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

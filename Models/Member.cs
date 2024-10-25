@@ -17,6 +17,9 @@ namespace TennisFinalGrp339.Models
 
         public bool Active { get; set; }
 
+        public ApplicationUser ApplicationUser { get; set; } // Navigation property
+
         public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
+
     }
 }
