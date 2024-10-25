@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -15,24 +13,16 @@ namespace TennisFinalGrp339.Controllers
     public class SchedulesController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private object enrollment;
-        private readonly UserManager<ApplicationUser> _userManager;
 
-        public SchedulesController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+        public SchedulesController(ApplicationDbContext context)
         {
-            _userManager = userManager;
             _context = context;
         }
 
         // GET: Schedules
         public async Task<IActionResult> Index()
         {
-
-            var schedules = await _context.Schedule
-                .Include(s => s.Enrollments) // Include enrollments
-                .ToListAsync();
-
-            return View(schedules);
+            return View(await _context.Schedule.ToListAsync());
         }
 
         // GET: Schedules/Details/5
@@ -44,7 +34,6 @@ namespace TennisFinalGrp339.Controllers
             }
 
             var schedule = await _context.Schedule
-                 .Include(s => s.Enrollments) // Include enrollments for the schedule
                 .FirstOrDefaultAsync(m => m.ScheduleId == id);
             if (schedule == null)
             {
@@ -57,14 +46,15 @@ namespace TennisFinalGrp339.Controllers
         // GET: Schedules/Create
         public IActionResult Create()
         {
-            ViewBag.CoachId = new SelectList(_context.Coach, "CoachId", "FirstName"); // Assuming 'FirstName' for simplicity, you can concatenate FirstName and LastName if needed.
             return View();
         }
 
         // POST: Schedules/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ScheduleId,Name,Location,Description,ScheduledDate,CoachId")] Schedule schedule)
+        public async Task<IActionResult> Create([Bind("ScheduleId,Name,Location,Description")] Schedule schedule)
         {
             if (ModelState.IsValid)
             {
@@ -72,9 +62,6 @@ namespace TennisFinalGrp339.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-
-            // Reload the dropdown list in case of errors
-            ViewBag.CoachId = new SelectList(_context.Coach, "CoachId", "FirstName", schedule.CoachId);
             return View(schedule);
         }
 
@@ -162,56 +149,9 @@ namespace TennisFinalGrp339.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [Authorize(Roles = "Member")]
-        public async Task<IActionResult> Enroll(int id)
-        {
-
-            var user = await _userManager.GetUserAsync(User);
-            var memberId = user.MemberId.Value;
-            // Get the schedule by ID
-            var schedule = _context.Schedule.Find(id);
-            if (schedule == null)
-            {
-                return NotFound();
-            }
-
-            var enrollment = new Enrollment
-            {
-                ScheduleId = id,
-                MemberId = memberId,
-                EnrolledOn = DateTime.Now
-            };
-
-            _context.Enrollment.Add(enrollment);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction(nameof(Index));
-        }
-
-        [Authorize(Roles = "Member")]
-        public async Task<IActionResult> Unenroll(int id)
-        {
-            var user = await _userManager.GetUserAsync(User);
-            var memberId = user.MemberId.Value;
-
-            var enrollment = await _context.Enrollment
-                .FirstOrDefaultAsync(e => e.ScheduleId == id && e.MemberId == memberId);
-
-            if (enrollment != null)
-            {
-                _context.Enrollment.Remove(enrollment);
-                await _context.SaveChangesAsync();
-            }
-
-            return RedirectToAction(nameof(Index));
-        }
-
-
         private bool ScheduleExists(int id)
         {
             return _context.Schedule.Any(e => e.ScheduleId == id);
         }
-
-
     }
 }

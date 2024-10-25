@@ -144,6 +144,7 @@ namespace TennisFinalGrp339.Controllers
             {
                 return NotFound();
             }
+
             var user = await _context.Users.FirstOrDefaultAsync(u => u.MemberId == id);
             if (user != null)
             {

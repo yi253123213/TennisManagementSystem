@@ -87,12 +87,23 @@ namespace TennisFinalGrp339.Data
                 .HasForeignKey<ApplicationUser>(a => a.MemberId)
                 .OnDelete(DeleteBehavior.Cascade); // Cascade delete Member when ApplicationUser is deleted
 
-            
+            modelBuilder.Entity<ApplicationUser>()
+                .HasOne(a => a.Coach)
+                .WithOne()
+                .HasForeignKey<ApplicationUser>(a => a.CoachId)
+                .OnDelete(DeleteBehavior.Cascade); // Cascade delete Coach when ApplicationUser is deleted
+
             modelBuilder.Entity<Member>()
                 .HasOne<ApplicationUser>()
                 .WithOne(a => a.Member)
                 .HasForeignKey<ApplicationUser>(a => a.MemberId)
                 .OnDelete(DeleteBehavior.Cascade); // Delete ApplicationUser when Member is deleted
+
+            modelBuilder.Entity<Coach>()
+                .HasOne<ApplicationUser>()
+                .WithOne(a => a.Coach)
+                .HasForeignKey<ApplicationUser>(a => a.CoachId)
+                .OnDelete(DeleteBehavior.NoAction);
 
             OnModelCreatingPartial(modelBuilder);
         }

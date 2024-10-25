@@ -16,5 +16,7 @@ namespace TennisFinalGrp339.Models
         public string? Biography { get; set; }
 
         public byte[]? Photo { get; set; }
+
+
     }
 }

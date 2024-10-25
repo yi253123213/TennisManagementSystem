@@ -110,7 +110,7 @@ namespace TennisFinalGrp339.Areas.Identity.Pages.Account
                     // Assign role to user
                     await _userManager.AddToRoleAsync(user, Input.UserRole);
 
-                    // Create Coach or Member object
+                    // Create Coach or Member object and set ID in ApplicationUser
                     if (Input.UserRole == "Coach")
                     {
                         var coach = new Coach
@@ -118,8 +118,14 @@ namespace TennisFinalGrp339.Areas.Identity.Pages.Account
                             FirstName = Input.FirstName,
                             LastName = Input.LastName,
                             Biography = Input.Biography,
+
                         };
                         _context.Coach.Add(coach);
+                        await _context.SaveChangesAsync();
+
+                        // Assign CoachId to user
+                        user.CoachId = coach.CoachId;
+                        _context.Users.Update(user); // Save CoachId or MemberId to ApplicationUser
                         await _context.SaveChangesAsync();
                     }
                     else if (Input.UserRole == "Member")
@@ -130,15 +136,18 @@ namespace TennisFinalGrp339.Areas.Identity.Pages.Account
                             LastName = Input.LastName,
                             Email = Input.Email,
                             Active = true,
+
                         };
                         _context.Member.Add(member);
                         await _context.SaveChangesAsync();
 
-                        // Associate the newly created Member with the ApplicationUser
-                        user.MemberId = member.MemberId; // Assuming Member has an Id property
-                        _context.Users.Update(user);
+                        // Assign MemberId to user
+                        user.MemberId = member.MemberId;
+                        _context.Users.Update(user); // Save CoachId or MemberId to ApplicationUser
                         await _context.SaveChangesAsync();
                     }
+
+
 
                     _logger.LogInformation("User created a new account with password.");
 
@@ -167,5 +176,6 @@ namespace TennisFinalGrp339.Areas.Identity.Pages.Account
             // Redisplay the form if validation fails
             return Page();
         }
+
     }
 }

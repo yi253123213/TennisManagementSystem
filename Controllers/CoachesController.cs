@@ -20,14 +20,14 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches
-        [Authorize(Roles = "Member, Coach, Admin")]
+        //[Authorize(Roles = "Member, Coach, Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Coach.ToListAsync());
         }
 
         // GET: Coaches/Details/5
-        [Authorize(Roles = "Member, Coach, Admin")]
+        //[Authorize(Roles = "Member, Coach, Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -119,7 +119,8 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches/Delete/5
-        [Authorize(Roles = "Admin")]
+        // GET: Coaches/Delete/5
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -140,16 +141,24 @@ namespace TennisFinalGrp339.Controllers
         // POST: Coaches/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var coach = await _context.Coach.FindAsync(id);
-            if (coach != null)
+            if (coach == null)
             {
-                _context.Coach.Remove(coach);
+                return NotFound();
             }
 
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.CoachId == id);
+            if (user != null)
+            {
+                _context.Users.Remove(user);
+            }
+
+            _context.Coach.Remove(coach);
             await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 
