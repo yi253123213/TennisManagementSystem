@@ -93,6 +93,7 @@ namespace TennisFinalGrp339.Controllers
             {
                 return NotFound();
             }
+            ViewBag.CoachId = new SelectList(_context.Coach, "CoachId", "FirstName"); // Assuming 'FirstName' for simplicity, you can concatenate FirstName and LastName if needed.
             return View(schedule);
         }
 
@@ -101,7 +102,7 @@ namespace TennisFinalGrp339.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ScheduleId,Name,Location,Description")] Schedule schedule)
+        public async Task<IActionResult> Edit(int id, [Bind("ScheduleId,Name,Location,Description,ScheduledDate,CoachId")] Schedule schedule)
         {
             if (id != schedule.ScheduleId)
             {
@@ -128,6 +129,8 @@ namespace TennisFinalGrp339.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            // Reload the dropdown list in case of errors
+            ViewBag.CoachId = new SelectList(_context.Coach, "CoachId", "FirstName", schedule.CoachId);
             return View(schedule);
         }
 
@@ -183,6 +186,13 @@ namespace TennisFinalGrp339.Controllers
             if (schedule == null)
             {
                 return NotFound();
+            }
+
+            if (schedule.ScheduledDate <= DateTime.Now)
+            {
+                // Display a message or redirect to an appropriate page if enrollment is not allowed
+                TempData["ErrorMessage"] = "Enrollment is not allowed on or after the scheduled date.";
+                return RedirectToAction(nameof(Index));
             }
 
             var enrollment = new Enrollment
