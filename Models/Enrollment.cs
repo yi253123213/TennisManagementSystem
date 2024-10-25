@@ -15,7 +15,7 @@ public class Enrollment
     public int ScheduleId { get; set; }
 
     // Additional properties
-    public DateTime EnrollmentDate { get; set; }
+    public DateTime EnrolledOn { get; set; }
 
     // Navigation Properties
     public Member Member { get; set; } = default!;

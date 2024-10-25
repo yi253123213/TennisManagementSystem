@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -13,9 +14,11 @@ namespace TennisFinalGrp339.Controllers
     public class SchedulesController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public SchedulesController(ApplicationDbContext context)
+        public SchedulesController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
+            _userManager = userManager;
             _context = context;
         }
 
@@ -152,6 +155,53 @@ namespace TennisFinalGrp339.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> Enroll(int id)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account"); // Redirect to login if not authenticated
+            }
+
+            var memberId = user.MemberId.Value;
+            // Get the schedule by ID
+            var schedule = _context.Schedule.Find(id);
+            if (schedule == null)
+            {
+                return NotFound();
+            }
+
+            var enrollment = new Enrollment
+            {
+                ScheduleId = id,
+                MemberId = memberId,
+                EnrolledOn = DateTime.Now
+            };
+
+            _context.Enrollment.Add(enrollment);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Unenroll(int id)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            var memberId = user.MemberId.Value;
+
+            var enrollment = await _context.Enrollment
+                .FirstOrDefaultAsync(e => e.ScheduleId == id && e.MemberId == memberId);
+
+            if (enrollment != null)
+            {
+                _context.Enrollment.Remove(enrollment);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
 
         private bool ScheduleExists(int id)
         {
