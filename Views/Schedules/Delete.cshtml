@@ -3,12 +3,14 @@
 @inject UserManager<ApplicationUser> UserManager
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Delete";
     var user = await UserManager.GetUserAsync(User); // Get the logged-in user
     var isEnrolled = Model.Enrollments.Any(e => e.MemberId == user.MemberId); // Check if the user is enrolled
 }
 
-<h1>Details</h1>
+<h1>Delete</h1>
+
+<link rel="stylesheet" href="~/css/delete.css" />
 
 <div>
     <h4>Schedule</h4>
