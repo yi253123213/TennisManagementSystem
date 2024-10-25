@@ -25,6 +25,10 @@ namespace TennisFinalGrp339.Controllers
         // GET: Schedules
         public async Task<IActionResult> Index()
         {
+            var schedules = await _context.Schedule
+                .Include(s => s.Enrollments) // Include enrollments
+                .ToListAsync();
+
             return View(await _context.Schedule.ToListAsync());
         }
 
@@ -37,6 +41,7 @@ namespace TennisFinalGrp339.Controllers
             }
 
             var schedule = await _context.Schedule
+                 .Include(s => s.Enrollments) // Include enrollments for the schedule
                 .FirstOrDefaultAsync(m => m.ScheduleId == id);
             if (schedule == null)
             {

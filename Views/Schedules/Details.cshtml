@@ -1,8 +1,13 @@
 ﻿@model TennisFinalGrp339.Models.Schedule
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
 
 @{
     ViewData["Title"] = "Details";
+    var user = await UserManager.GetUserAsync(User); // Get the logged-in user
+    var isEnrolled = Model.Enrollments.Any(e => e.MemberId == user.MemberId); // Check if the user is enrolled
 }
+
 
 <h1>Details</h1>
 
@@ -32,5 +37,16 @@
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.ScheduleId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back to List</a> |
+
+    @if (isEnrolled)
+    {
+        <!-- Unenroll button if the user is enrolled -->
+        <a asp-action="Unenroll" asp-route-id="@Model?.ScheduleId" class="btn btn-warning">Unenroll</a>
+    }
+    else
+    {
+        <!-- Enroll button if the user is not enrolled -->
+        <a asp-action="Enroll" asp-route-id="@Model?.ScheduleId" class="btn btn-primary">Enroll</a>
+    }
 </div>
