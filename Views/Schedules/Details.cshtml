@@ -71,7 +71,7 @@
 
     </div>
 }
-@if (User.IsInRole("Coach"))
+@if (!User.IsInRole("Member"))
 {
     <h2>Enrolled Students</h2>
     @if (Model.Enrollments.Any())
