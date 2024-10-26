@@ -9,8 +9,11 @@ public partial class Schedule
     [Key]
     public int ScheduleId { get; set; }
 
+    [StringLength(200, ErrorMessage = "Name cannot exceed 200 characters.")]
+
     public string? Name { get; set; } = null!;
 
+    [StringLength(200, ErrorMessage = "Location cannot exceed 200 characters.")]
     public string? Location { get; set; }
 
     public string? Description { get; set; }

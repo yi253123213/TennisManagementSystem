@@ -44,10 +44,12 @@ namespace TennisFinalGrp339.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
+            [StringLength(200, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 2)]
             [Display(Name = "First Name")]
             public string FirstName { get; set; } = string.Empty;
 
             [Required]
+            [StringLength(200, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 2)]
             [Display(Name = "Last Name")]
             public string LastName { get; set; } = string.Empty;
 
