@@ -50,11 +50,11 @@
                 <td>@item.ScheduledDate.ToShortDateString()</td>
                 <td><a asp-action="Details" asp-controller="Coaches" asp-route-id="@item.CoachId">@item.Coach.FirstName @item.Coach.LastName</a></td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@item.ScheduleId">Details</a>
+                    <a asp-action="Details" asp-route-id="@item.ScheduleId" class="btn btn-success"> Details</a>
                     @if(User.IsInRole("Admin"))
                     {
-                    <a asp-action="Edit" asp-route-id="@item.ScheduleId">Edit</a>
-                    <a asp-action="Delete" asp-route-id="@item.ScheduleId">Delete</a>
+                        <a asp-action="Edit" asp-route-id="@item.ScheduleId" class="btn btn-success">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.ScheduleId" class="btn btn-danger">Delete</a>
                     }
                     @if(User.IsInRole("Member"))
                     {

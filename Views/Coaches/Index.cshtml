@@ -38,12 +38,12 @@
                 @Html.DisplayFor(modelItem => item.Biography)
             </td>
             <td>
-                <a asp-action="Details" asp-route-id="@item.CoachId">Details</a>
+                <a asp-action="Details" asp-route-id="@item.CoachId" class="btn btn-success">Details</a>
 
                 @if (User.IsInRole("Admin"))
                 {
-                    <a asp-action="Edit" asp-route-id="@item.CoachId">Edit</a>
-                    <a asp-action="Delete" asp-route-id="@item.CoachId">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.CoachId" class="btn btn-success">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.CoachId" class="btn btn-danger">Delete</a>
                 }
             </td>
         </tr>
