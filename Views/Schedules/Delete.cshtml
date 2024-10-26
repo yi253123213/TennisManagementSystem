@@ -2,6 +2,8 @@
 @model TennisFinalGrp339.Models.Schedule
 @inject UserManager<ApplicationUser> UserManager
 
+<link rel="stylesheet" href="~/css/delete.css" />
+
 @{
     ViewData["Title"] = "Delete";
     var user = await UserManager.GetUserAsync(User); // Get the logged-in user
@@ -10,7 +12,7 @@
 
 <h1>Delete</h1>
 
-<link rel="stylesheet" href="~/css/delete.css" />
+
 
 <div>
     <h4>Schedule</h4>

@@ -4,13 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Coaches</h1>
+<h1>Coaches List</h1>
 
 <link rel="stylesheet" href="~/css/coach.css" />
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -23,10 +21,8 @@
             <th>
                 @Html.DisplayNameFor(model => model.Biography)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Photo)
-            </th>
-            <th></th>
+            <th>Actions</th>
+
         </tr>
     </thead>
     <tbody>
@@ -42,12 +38,13 @@
                 @Html.DisplayFor(modelItem => item.Biography)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Photo)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CoachId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CoachId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CoachId">Delete</a>
+                <a asp-action="Details" asp-route-id="@item.CoachId">Details</a>
+
+                @if (User.IsInRole("Admin"))
+                {
+                    <a asp-action="Edit" asp-route-id="@item.CoachId">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.CoachId">Delete</a>
+                }
             </td>
         </tr>
 }

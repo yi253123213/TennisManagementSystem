@@ -17,147 +17,147 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TennisFinalGrp339
 build_property.RootNamespace = TennisFinalGrp339
-build_property.ProjectDir = C:\Users\mhmda\source\repos\transfer\
+build_property.ProjectDir = C:\Users\mhmda\source\repos\finalTest\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\mhmda\source\repos\transfer
+build_property.MSBuildProjectDirectory = C:\Users\mhmda\source\repos\finalTest
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/mhmda/source/repos/transfer/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Coaches/Create.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Coaches/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29hY2hlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Coaches/Delete.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Coaches/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29hY2hlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Coaches/Details.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Coaches/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29hY2hlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Coaches/Edit.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Coaches/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29hY2hlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Coaches/Index.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Coaches/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29hY2hlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Home/Index.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Home/Privacy.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Members/Create.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Members/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Members/Delete.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Members/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Members/Details.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Members/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Members/Edit.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Members/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Members/Index.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Members/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Schedules/CoachSchedules.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Schedules/CoachSchedules.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVzXENvYWNoU2NoZWR1bGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Schedules/Create.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Schedules/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Schedules/Delete.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Schedules/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Schedules/Details.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Schedules/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Schedules/Edit.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Schedules/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Schedules/Index.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Schedules/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Schedules/MemberSchedules.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Schedules/MemberSchedules.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVzXE1lbWJlclNjaGVkdWxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Shared/Error.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/_ViewImports.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/_ViewStart.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mhmda/source/repos/transfer/Views/Shared/_Layout.cshtml]
+[C:/Users/mhmda/source/repos/finalTest/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jwhbrws634

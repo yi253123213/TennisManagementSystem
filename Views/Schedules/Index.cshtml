@@ -7,6 +7,9 @@
     var user = await UserManager.GetUserAsync(User); // Get the logged-in user
 }
 
+
+<link rel="stylesheet" href="~/css/schedules.css" />
+
 <h1>Schedules</h1>
 
 <!-- Error message alert section -->
@@ -19,19 +22,21 @@
 
 
 
-<link rel="stylesheet" href="~/css/schedules.css" />
-
-<p>
-    <a asp-action="Create">Create New Schedule</a>
-</p>
+@if(User.IsInRole("Admin"))
+    {
+        <p>
+        <a asp-action="Create">Create New Schedule</a>
+        </p>
+    }
 <table class="table">
     <thead>
         <tr>
             <th>@Html.DisplayNameFor(model => model.Name)</th>
             <th>@Html.DisplayNameFor(model => model.Location)</th>
             <th>Scheduled Date</th>
-            <th>Coach</th> 
+            <th>Coach</th>
             <th>Actions</th>
+            
         </tr>
     </thead>
     <tbody>
@@ -45,19 +50,24 @@
                 <td>@item.ScheduledDate.ToShortDateString()</td>
                 <td><a asp-action="Details" asp-controller="Coaches" asp-route-id="@item.CoachId">@item.Coach.FirstName @item.Coach.LastName</a></td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.ScheduleId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.ScheduleId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.ScheduleId">Delete</a> |
-
-                    @if (isEnrolled)
+                    <a asp-action="Details" asp-route-id="@item.ScheduleId">Details</a>
+                    @if(User.IsInRole("Admin"))
                     {
-                        <!-- If the user is already enrolled, show Unenroll button -->
-                        <a asp-action="Unenroll" asp-route-id="@item.ScheduleId" class="btn btn-warning">Unenroll</a>
+                    <a asp-action="Edit" asp-route-id="@item.ScheduleId">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.ScheduleId">Delete</a>
                     }
-                    else
+                    @if(User.IsInRole("Member"))
                     {
-                        <!-- If the user is not enrolled, show Enroll button -->
-                        <a asp-action="Enroll" asp-route-id="@item.ScheduleId" class="btn btn-success">Enroll</a>
+                        @if (isEnrolled)
+                        {
+                            <!-- If the user is already enrolled, show Unenroll button -->
+                            <a asp-action="Unenroll" asp-route-id="@item.ScheduleId" class="btn btn-warning">Unenroll</a>
+                        }
+                        else
+                        {
+                            <!-- If the user is not enrolled, show Enroll button -->
+                            <a asp-action="Enroll" asp-route-id="@item.ScheduleId" class="btn btn-success">Enroll</a>
+                        }
                     }
                 </td>
             </tr>

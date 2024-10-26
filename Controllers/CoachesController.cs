@@ -23,14 +23,14 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches
-        //[Authorize(Roles = "Member, Coach, Admin")]
+        [Authorize(Roles = "Member,Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Coach.ToListAsync());
         }
 
         // GET: Coaches/Details/5
-        //[Authorize(Roles = "Member, Coach, Admin")]
+        [Authorize(Roles = "Member,Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -49,7 +49,6 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches/Create
-        //[Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -58,7 +57,6 @@ namespace TennisFinalGrp339.Controllers
         // POST: Coaches/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("CoachId,FirstName,LastName,Biography,Photo")] Coach coach)
         {
             if (ModelState.IsValid)
@@ -71,17 +69,19 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Coaches/Edit/5
-        //[Authorize(Roles = "Coach, Admin")]
+        [Authorize(Roles = "Coach, Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             var user = await _userManager.GetUserAsync(User);
 
             // Check if the user is trying to access their own profile
-            if (user.CoachId != id)
+            if (User.IsInRole("Coach"))
             {
-                return Forbid(); // Deny access if the CoachId doesn't match
+                if (user.CoachId != id)
+                {
+                    return Forbid(); // Deny access if the CoachId doesn't match
+                }
             }
-
             var coach = await _context.Coach.FindAsync(id);
             if (coach == null)
             {
@@ -93,7 +93,7 @@ namespace TennisFinalGrp339.Controllers
         // POST: Coaches/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //[Authorize(Roles = "Coach, Admin")]
+        [Authorize(Roles = "Coach, Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("CoachId,FirstName,LastName,Biography,Photo")] Coach coach)
         {
             if (id != coach.CoachId)
@@ -126,7 +126,7 @@ namespace TennisFinalGrp339.Controllers
 
         // GET: Coaches/Delete/5
         // GET: Coaches/Delete/5
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -147,7 +147,7 @@ namespace TennisFinalGrp339.Controllers
         // POST: Coaches/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var coach = await _context.Coach.FindAsync(id);
@@ -168,6 +168,7 @@ namespace TennisFinalGrp339.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Coach")]
         public async Task<IActionResult> MyProfile()
         {
             var user = await _userManager.GetUserAsync(User);

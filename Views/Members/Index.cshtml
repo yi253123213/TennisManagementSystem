@@ -1,16 +1,14 @@
 ﻿@model IEnumerable<TennisFinalGrp339.Models.Member>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Members";
 }
 
-<h1>Members</h1>
+<h1>Member List</h1>
 
 <link rel="stylesheet" href="~/css/member.css" />
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -26,7 +24,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.Active)
             </th>
-            <th></th>
+            @if (User.IsInRole("Admin"))
+            {
+                <th>Actions</th>
+            }
         </tr>
     </thead>
     <tbody>
@@ -44,11 +45,14 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Active)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MemberId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MemberId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MemberId">Delete</a>
-            </td>
+            @if (User.IsInRole("Admin"))
+            {
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.MemberId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.MemberId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.MemberId">Delete</a>
+                </td>
+            }
         </tr>
 }
     </tbody>

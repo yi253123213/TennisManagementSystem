@@ -53,6 +53,7 @@ namespace TennisFinalGrp339
 
             using (var scope = app.Services.CreateScope())
             {
+                var services = scope.ServiceProvider;
                 var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
                 var roles = new[] { "Admin", "Member", "Coach" };
 
@@ -61,7 +62,30 @@ namespace TennisFinalGrp339
                     if (!await roleManager.RoleExistsAsync(role))
                         await roleManager.CreateAsync(new IdentityRole(role));
                 }
+
+                var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+                const string adminEmail = "admin@admin.com";
+                const string adminPassword = "Admin.123";
+
+                if (await userManager.FindByEmailAsync(adminEmail) == null)
+                {
+                    var adminUser = new ApplicationUser
+                    {
+                        UserName = adminEmail,
+                        Email = adminEmail,
+                        FirstName = "Admin",
+                        LastName = "Admin",
+                        EmailConfirmed = true
+                    };
+
+                    var result = await userManager.CreateAsync(adminUser, adminPassword);
+                    if (result.Succeeded)
+                    {
+                        await userManager.AddToRoleAsync(adminUser, "Admin");
+                    }
+                }
             }
+
 
             app.Run();
         }

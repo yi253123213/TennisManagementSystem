@@ -2,6 +2,7 @@
 @using Microsoft.AspNetCore.Identity
 @inject UserManager<ApplicationUser> UserManager
 
+<link rel="stylesheet" href="~/css/schedules.css" />
 @{
     ViewData["Title"] = "Details";
     var user = await UserManager.GetUserAsync(User); // Get the logged-in user
@@ -45,35 +46,47 @@
 
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.ScheduleId">Edit</a> |
-    <a asp-action="Index">Back to List</a> |
+@if(!User.IsInRole("Coach"))
+{
+    <div>
+        <a asp-action="Index">Back to List</a>
+        @if(User.IsInRole("Admin"))
+        {
+            <a asp-action="Edit" asp-route-id="@Model?.ScheduleId">Edit</a>
 
-    @if (isEnrolled)
+        }
+        @if(User.IsInRole("Member"))
+        {
+            @if (isEnrolled)
+            {
+                <!-- Unenroll button if the user is enrolled -->
+                <a asp-action="Unenroll" asp-route-id="@Model?.ScheduleId" class="btn btn-warning">Unenroll</a>
+            }
+            else
+            {
+                <!-- Enroll button if the user is not enrolled -->
+                <a asp-action="Enroll" asp-route-id="@Model?.ScheduleId" class="btn btn-primary">Enroll</a>
+            }
+        }
+
+    </div>
+}
+@if (User.IsInRole("Coach"))
+{
+    <h2>Enrolled Students</h2>
+    @if (Model.Enrollments.Any())
     {
-        <!-- Unenroll button if the user is enrolled -->
-        <a asp-action="Unenroll" asp-route-id="@Model?.ScheduleId" class="btn btn-warning">Unenroll</a>
+        <ul>
+            @foreach (var enrollment in Model.Enrollments)
+            {
+                <li>
+                    @enrollment.Member.FirstName @enrollment.Member.LastName (@enrollment.Member.Email)
+                </li>
+            }
+        </ul>
     }
     else
     {
-        <!-- Enroll button if the user is not enrolled -->
-        <a asp-action="Enroll" asp-route-id="@Model?.ScheduleId" class="btn btn-primary">Enroll</a>
+        <p>No students are enrolled in this schedule yet.</p>
     }
-</div>
-
-<h2>Enrolled Students</h2>
-@if (Model.Enrollments.Any())
-{
-    <ul>
-        @foreach (var enrollment in Model.Enrollments)
-        {
-            <li>
-                @enrollment.Member.FirstName @enrollment.Member.LastName (@enrollment.Member.Email)
-            </li>
-        }
-    </ul>
-}
-else
-{
-    <p>No students are enrolled in this schedule yet.</p>
 }

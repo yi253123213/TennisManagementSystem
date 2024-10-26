@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -23,6 +24,7 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Schedules
+        [Authorize(Roles = "Admin,Member")]
         public async Task<IActionResult> Index()
         {
             var schedules = await _context.Schedule
@@ -55,6 +57,7 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Schedules/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewBag.CoachId = new SelectList(_context.Coach, "CoachId", "FirstName"); // Assuming 'FirstName' for simplicity, you can concatenate FirstName and LastName if needed.
@@ -66,6 +69,7 @@ namespace TennisFinalGrp339.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("ScheduleId,Name,Location,Description,ScheduledDate,CoachId")] Schedule schedule)
         {
             if (ModelState.IsValid)
@@ -81,6 +85,7 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Schedules/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -102,6 +107,7 @@ namespace TennisFinalGrp339.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("ScheduleId,Name,Location,Description,ScheduledDate,CoachId")] Schedule schedule)
         {
             if (id != schedule.ScheduleId)
@@ -135,6 +141,7 @@ namespace TennisFinalGrp339.Controllers
         }
 
         // GET: Schedules/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -155,6 +162,7 @@ namespace TennisFinalGrp339.Controllers
         // POST: Schedules/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var schedule = await _context.Schedule.FindAsync(id);
@@ -167,6 +175,7 @@ namespace TennisFinalGrp339.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Member")]
         public async Task<IActionResult> Enroll(int id)
         {
             var user = await _userManager.GetUserAsync(User);
@@ -208,6 +217,8 @@ namespace TennisFinalGrp339.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+
+        [Authorize(Roles = "Member")]
         public async Task<IActionResult> Unenroll(int id)
         {
             var user = await _userManager.GetUserAsync(User);
@@ -230,6 +241,8 @@ namespace TennisFinalGrp339.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+
+        [Authorize(Roles = "Coach")]
         public async Task<IActionResult> CoachSchedules()
         {
             // Get the logged-in user
@@ -247,6 +260,8 @@ namespace TennisFinalGrp339.Controllers
             return View("CoachSchedules", schedules); // Use a new view
         }
 
+
+        [Authorize(Roles = "Member")]
         public async Task<IActionResult> MemberSchedules()
         {
             var user = await _userManager.GetUserAsync(User);

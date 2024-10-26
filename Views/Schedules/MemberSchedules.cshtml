@@ -2,10 +2,13 @@
 @model IEnumerable<TennisFinalGrp339.Models.Schedule>
 @inject UserManager<ApplicationUser> UserManager
 
+
 @{
     ViewData["Title"] = "My Schedules";
     var user = await UserManager.GetUserAsync(User);
 }
+
+<link rel="stylesheet" href="~/css/schedules.css" />
 
 <h1>My Schedules</h1>
 
